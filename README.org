@@ -1,0 +1,35 @@
+#+TITLE: Gradient Descent Algorithm
+#+SUBTITLE: FORTRAN implementation
+#+AUTHOR: Baudilio Tejerina
+#+EMAIL: bltejerina@gmail.com
+
+#+STARTUP: inlineimages
+
+* Introduction
+
+  Find the minimum of a concave function or, a n interval in which the function is concave. Compare
+  analytic and numerical program methods.
+
+  The test function is f(x) = (x+1) * (x-3) . The numeric algorithms compare with analytic solution (1,-4)
+
+#+BEGIN_SRC ipython :session :results raw drawer
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.arange(-2, 4, 0.1)
+y = np.array([(i+1)*(i-3) for i in x])
+
+plt.plot(x, y, 'k',  lw=.2)
+#+END_SRC
+
+
+#+BEGIN_SRC gnuplot :file plot.png :results graphics
+set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 7 ps 1.5   # --- blue
+plot (x+1)*(x-3) with linespoints ls 1
+#+end_src
+
+
+
+* Reference
+  https://en.wikipedia.org/wiki/Gradient_descent
