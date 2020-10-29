@@ -31,5 +31,14 @@ plot (x+1)*(x-3) with linespoints ls 1
 
 
 
+* Compilation
+  ~$> gfortran -Wall -O2 -o a.x prog/main_1D.f90~
+
 * Reference
   https://en.wikipedia.org/wiki/Gradient_descent
+  http://rosettacode.org/wiki/Gradient_descent
+
+  GSL:
+  https://www.gnu.org/software/gsl/
+  https://www.gnu.org/software/gsl/doc/html/multimin.html
+  http://irtfweb.ifa.hawaii.edu/SoftwareDocs/gsl/gsl-ref-html/gsl-ref_34.html
