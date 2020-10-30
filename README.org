@@ -32,7 +32,14 @@ plot (x+1)*(x-3) with linespoints ls 1
 
 
 * Compilation
+
+  Manually
+
   ~$> gfortran -Wall -O2 -o a.x prog/main_1D.f90~
+
+  After separating library and main codes:
+
+  ~$> gfortran -Wall -O2 -o a.x lib/types.f90 prog/main_1D.f90~
 
 * Reference
   https://en.wikipedia.org/wiki/Gradient_descent
