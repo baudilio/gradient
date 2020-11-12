@@ -10,7 +10,7 @@
   Find the minimum of a concave function or, a n interval in which the function is concave. Compare
   analytic and numerical program methods.
 
-  The test function is f(x) = (x+1) * (x-3) . The numeric algorithms compare with analytic solution (1,-4)
+  The test function is $`f(x) = (x+1) * (x-3)`$ . The numeric algorithms compare with analytic solution (1,-4)
 
 #+BEGIN_SRC ipython :session :results raw drawer
 %matplotlib inline
